@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Salvo!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="loginForm">
+
+<form id="login-form" onsubmit="return false">
+    <label>Name: <input type="text" name="username" id="loginLabel"></label>
+    <label>Password: <input type="text" name="password" id="passwordLabel"></label>
+    <button onclick="login()">Log In</button>
+    <button id="submit-btn" type="button" onclick="register()">Register!</button>
+    <div id="failState">Incorrect username or password!</div>
+</form>
+    <p>Please log in to create or join a game!</p>
+</div>
+
+<div id="registerForm">
+
+<form id="person-form" action="">
+<!--    <label>Name: <input type="text" name="username" id="newUser"></label>-->
+<!--    <label>Password <input type="text" name="password" id="newPassword"></label>-->
+</form>
+</div>
+<div id="logout-form">
+<form  onsubmit="return false">
+    <button onclick="logout()">Log out</button>
+</form>
+    <p>Currently logged in as:</p>
+    <div id="username"></div>
+</div>
+
+<h1>Games List!</h1>
+
+<ul id="games">Here's the list of current games:
+
+</ul>
+<button id="createButton" type="button" onclick="createGame()">New Game!</button>
+<p id="createGameFail">Please create an account and log in to make a new game.</p>
+<h3>Here are the players sorted by best score:</h3>
+<table id="leaderboard"></table>
+
+<script src="/web/scripts/games.js"></script>
+
+</body>
+</html>

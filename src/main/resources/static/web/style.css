@@ -1,0 +1,57 @@
+body {
+padding: 10px;
+}
+
+.cell {display:table-cell;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    width: 40px; height: 40px;
+}
+.placementCell {display:table-cell;
+    width: 40px; height: 40px;
+}
+.row {
+    display:table-row;
+    clear: both;
+    overflow: hidden;
+}
+.table {
+    display:table;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    display:table;
+}
+.grids {
+display: flex;
+}
+
+
+#failState {
+    display: none;
+}
+
+#createGameFail{
+    display: none;
+}
+
+
+
+#destroyer {
+    background-color: orange;
+    border: 0px;
+}
+#submarine {
+    background-color: pink;
+}
+#carrier {
+    background-color: purple;
+}
+#frigate {
+    background-color: cyan;
+}
+#cruiser {
+    background-color: black;
+}
+
+
+

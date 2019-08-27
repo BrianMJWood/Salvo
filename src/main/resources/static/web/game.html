@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Salvo!</title>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="playerInfo"></div>
+
+    <h3>Your Ship Locations!</h3>
+
+    <div class="grids">
+
+        <h5>Here are your ship locations in this game:</h5>
+        <div id="shipTable" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+
+        <h5>Here are your shots in this game:</h5>
+        <div id="salvoTable"></div>
+    </div>
+
+    <button id="postShipsButton" onclick="postShips()">Post Ships</button>
+    <div id="shipPlacements">
+
+            Ships to be placed:
+            <div id="shipsToBePlaced">
+
+            </div>
+
+
+
+    </div>
+
+<script src="/web/scripts/game.js"></script>
+</body>
+</html>
